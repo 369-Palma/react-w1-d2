@@ -1,6 +1,5 @@
-/* import { Container, Row } from "react";
-import { Card, Button } from "react-bootstrap";
-import fantasy from "../data/fantasy.json";
+import { Card, Button, Container, Row } from "react-bootstrap";
+import fantasy from "../../data/fantasy.json";
 
 const AllTheBooks = () => (
   <Container>
@@ -8,7 +7,7 @@ const AllTheBooks = () => (
       <h2 ClassName="text-center"> FANTASY </h2>
       {fantasy.map((book) => (
         <Card key={book.asin} style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={book.img} alt={book.title}/>
+          <Card.Img variant="top" src={book.img} alt={book.title} />
           <Card.Body>
             <Card.Title>{book.title}</Card.Title>
             <Card.Text>{book.price}</Card.Text>
@@ -20,4 +19,3 @@ const AllTheBooks = () => (
   </Container>
 );
 export default AllTheBooks;
- */
